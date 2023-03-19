@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang = "EN">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            box-sizing: content-box;
+            width: auto;
+            height: auto;
+            padding-top: 10%;
+        }
+        .white-keys{
+            display: inline-block;
+            position: relative;
+            box-sizing: content-box;;
+        }
+        .white-keys kbd{
+            display: inline-block;
+            border: 2px solid black;
+            background-color: white;
+            position: relative;
+            height: 500px;
+            width: 50px;
+            text-align: center;
+        }
+        .black-keys{
+            display: inline-block;
+            position: relative;
+            align-content: center;
+            justify-items: center;
+            margin: 50px;
+            padding-top: 15px;
+            right: 430px;
+        }
+        .black-keys kbd{
+            display: inline-block;
+            margin: auto;
+            position: relative;
+            background-color: black;
+            color: white;
+            height: 300px;
+            width: 30px;
+            text-align: center;
+            padding: 15px 25px 25px 15px;
+        }
+    </style>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.code === "KeyA") {
+                console.log("The 'A' key is pressed.");
+                let audioA = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/A.mp3');
+                audioA.play();
+            }
+            else if (event.code === "KeyS" ) {
+                console.log("The 'S' key is pressed.");
+                let audioB = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/S.mp3');
+                audioB.play();
+            }
+            else if (event.code === "KeyD") {
+                console.log("The 'D' key is pressed.");
+                let audioD = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/D.mp3');
+                audioD.play();
+            }
+            else if (event.code === "KeyG") {
+                console.log("The 'G' key is pressed.");
+                let audioG= new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/G.mp3');
+                audioG.play();
+            }
+            else if (event.code === "KeyF") {
+                console.log("The 'F' key is pressed.");
+                let audioF = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/F.mp3');
+                audioF.play();
+            }
+            else if (event.code === "KeyH") {
+                console.log("The 'H' key is pressed.");
+                let audioH = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/H.mp3');
+                audioH.play();
+            }
+            else if (event.code === "KeyJ") {
+                console.log("The 'J' key is pressed.");
+                let audioJ = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/J.mp3');
+                audioJ.play();
+            }
+            else if (event.code === "KeyW") {
+                console.log("The 'W' key is pressed.");
+                let audioJ = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/W.mp3');
+                audioJ.play();
+            }
+            else if (event.code === "KeyE") {
+                console.log("The 'E' key is pressed.");
+                let audioJ = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/JEmp3');
+                audioJ.play();
+            }
+            else if (event.code === "KeyT") {
+                console.log("The 'T' key is pressed.");
+                let audioJ = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/T.mp3');
+                audioJ.play();
+            }
+            else if (event.code === "KeyY") {
+                console.log("The 'Y' key is pressed.");
+                let audioJ = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/Y.mp3');
+                audioJ.play();
+            }
+            else if (event.code === "KeyU") {
+                console.log("The 'U' key is pressed.");
+                let audioJ = new Audio('/Users/marcoengelbrecht/WebstormProjects/Virtual Piano/Virtual Piano/task/sounds/U.mp3');
+                audioJ.play();
+            }
+            else {
+                console.log("Wrong key presses");
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="white-keys">
+        <kbd>A</kbd>
+        <kbd>S</kbd>
+        <kbd>D</kbd>
+        <kbd>F</kbd>
+        <kbd>G</kbd>
+        <kbd>H</kbd>
+        <kbd>J</kbd>
+    </div>
+    <div class="black-keys">
+        <kbd>W</kbd>
+        <kbd>E</kbd>
+        <kbd>T</kbd>
+        <kbd>Y</kbd>
+        <kbd>U</kbd>
+    </div>
+</div>
+</body>
+</html>
